@@ -86,10 +86,10 @@ public class IntegrationTest {
         }
 
         String postClientsWithGetDataResponseBody = response.getBody().asString();
-        System.out.println("\n"+"PostClientsWithGetData : Response POST Body is =>  " + postClientsWithGetDataResponseBody);        //POST data 3th element response body
+        System.out.println("\n"+"PostClientsWithGetData : Response POST Body is =>  " + postClientsWithGetDataResponseBody);        //POST data 2nd element response body
 
         Integer postClientsWithGetDatastatusCode=response.getStatusCode();
-        System.out.println("PostClientsWithGetData : Response POST Status Code =>  " + postClientsWithGetDatastatusCode);     //POST data 3th element status code
+        System.out.println("PostClientsWithGetData : Response POST Status Code =>  " + postClientsWithGetDatastatusCode);     //POST data 2nd element status code
         Assert.assertEquals(500, (int) postClientsWithGetDatastatusCode);
 
 
